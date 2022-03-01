@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  background: #f3f3fb;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  .alert {
+    height: 83px;
+    background-color: #0c0e41;
+    padding: 20px;
+    border-radius: 99px;
+    img {
+      width: 44px;
+      height: 44px;
+      color: white;
+    }
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+.component {
+  width: 600px;
+  height: 250px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0px 10px 24px rgba(9, 17, 89, 0.1);
+
+  h1 {
+    font-size: 22px;
+    color: #1b295e;
+    font-weight: 600;
+  }
+
+  .content-left {
+    display: flex;
+    align-items: center;
+
+    > img {
+      height: 70px;
+      width: 70px;
+      padding: 15px;
+      background-color: #ffd1ef;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    h3 {
+      margin-top: 30px;
+      font-size: 16px;
+      margin-left: 20px;
+      font-weight: 600;
+      color: #0C0E41;
+    }
+    .author {
+      font-size: 18px;
+      margin-top: 5px;
+      margin-left: 20px;
+      color: #0C0E41;
+      font-weight: 400;
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 600;
+
+      span {
+      margin-left: 8px;
+      }
+    }
+
+    img {
+      height: 34px;
+      width: 34px;
+    }
+
+    .twitter {
+      margin-right: 16px;
+      height: 50px;
+      width: 137px;
+      border-radius: 34px;
+      border: 1px solid #158abb;
+      color: #158abb;
+      padding: 8px 16px;
+    }
+
+    .facebook {
+      height: 50px;
+      width: 137px;
+      border-radius: 34px;
+      border: 1px solid #158abb;
+      color: #158abb;
+      padding: 8px 16px;
+
+    }
+  }
+}
+
+.content-2 {
+  position: absolute;
+  background: #e9ebff;
+  height: 258px;
+  width: 456px;
+  border-radius: 20px;
+  top: 250px;
+  left: 500px;
+  z-index: -1;
+}
